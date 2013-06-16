@@ -1,0 +1,19 @@
+<html>
+	<head>	
+		<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	</head>
+<body lang=FR link=blue>
+<h2 style="font_size: 14px; color:#4F81BD; font-family:'Calibri', 'Times New Roman', 'Cambria','serif'">
+{{title}} du {{date}}</h2>
+<div id="visibilite" style="font-family:'Calibri', 'Times New Roman', 'Cambria','serif' font-size:12px; margin-right: 20px;">
+<div id="socialmedia">
+	<p>Performance social media</li></ul>
+	{% for key, value in d.iteritems() %}
+    <ul><li>{{ key|e }}</li></ul>
+    <ul>
+    <li><{{ value|e }}</li>
+    </ul>
+{% endfor %}
+</div>
+</body>
+</html>
