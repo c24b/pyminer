@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 import tweetstream
 
-class TwitterStream(object):
-	def __init__(self, user,password, query):
+class TwitterStream():
+	def __init__(self,user,password, query):
 		self.User = user
 		self.Password = password
 		self.Query = query
 	def Get_Stream(self):
+		print self.User
 		with tweetstream.FilterStream(self.User, self.Password, track=self.Query) as stream:
 			for tweet in stream:
 				print "Got interesting tweet:", tweet

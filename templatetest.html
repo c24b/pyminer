@@ -8,30 +8,14 @@
 <div id="visibilite" style="font-family:'Calibri', 'Times New Roman', 'Cambria','serif' font-size:12px; margin-right: 20px;">
 <div id="socialmedia">
 	<p>Performance social media</p>
-	<ul>Facebook
-	{% for n in facebook %}
-	<li>{{n[0]}}: {{n[1]}} likes ({{n[2]}})</li>
+	<ul> Facebook
+	{% for n in results[0] %}
+	
+	<li>{{n[1]}}: {{n[2]}} likes ({{n[3]}})</li>
 	{% endfor %}
-	</ul>
-    
-    <ul>Twitter
-	{% for n in twitter %}
-	<li>{{n[0]}}: {{n[1]}} abonnés ({{n[2]}})</li>
-	{% endfor %}
-	</ul>
-    
-    <ul>Youtube
-	{% for n in youtube %}
-	<li>{{n[0]}}: {{n[1]}} abonnés ({{n[2]}})</li>
-	{% endfor %}
+	
 	</ul>
 	
-    <ul>Instagram
-	{% for n in instagram %}
-	<li>{{n[0]}}: {{n[1]}} abonnés ({{n[2]}})</li>
-	{% endfor %}
-	</ul>
-    
 </div>
 </body>
 </html>
